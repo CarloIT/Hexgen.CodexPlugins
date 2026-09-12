@@ -1,0 +1,5 @@
+# Default for new repository text files; keep imported skills' original endings.
+* text=auto eol=crlf
+plugins/hexgen-software-engineering/skills/dev-plan/SKILL.md text eol=lf
+plugins/hexgen-software-engineering/skills/dev-plan/references/template.md text eol=lf
+plugins/hexgen-software-engineering/skills/dotnet-backend-standards/** text eol=lf

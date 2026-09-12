@@ -1,0 +1,4 @@
+interface:
+  display_name: "分阶段开发计划"
+  short_description: "创建含证据、验证及逐 Phase 模型与推理强度的开发计划"
+  default_prompt: "使用 $dev-plan 生成可由新会话独立执行、并写明各 Phase 推荐模型与推理强度的 PLAN.md。"

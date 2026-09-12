@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文人工验收手册"
+  short_description: "编写可直接照做且证据边界清晰的中文人工验收手册"
+  default_prompt: "使用 $manual-acceptance-guide 为当前变更编写一份作者可以直接照做的中文人工验收手册。"

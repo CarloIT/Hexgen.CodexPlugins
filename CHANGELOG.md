@@ -1,0 +1,9 @@
+# 变更记录
+
+## 0.1.0 - 2026-09-12
+
+- 建立团队插件源 `hexgen-team`，提供 `hexgen-software-engineering`（Hexgen 软件工程规范）。
+- 迁入 `dev-plan`、`dotnet-backend-standards`、`manual-acceptance-guide` 及其完整引用、模板和 UI 元数据；保留三个技能原有内容与文件格式。
+- 提供个人账号使用场景下的安装、更新、源码维护、旧技能切换说明及本地结构校验脚本。
+
+版本记录描述仓库交付内容；GitHub 是否已经发布以及客户端是否完成安装，须分别以远程提交和客户端状态为准。
