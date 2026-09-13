@@ -1,6 +1,6 @@
 {
   "name": "hexgen-software-engineering",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hexgen 团队的软件工程工作流：分阶段开发计划、.NET 后端规范与中文人工验收手册。",
   "author": {
     "name": "Hexgen"
