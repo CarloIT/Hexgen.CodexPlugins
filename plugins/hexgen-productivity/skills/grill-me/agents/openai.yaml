@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "跟踪上游追问方式，按轮次集中澄清依赖已满足的计划与设计问题"
+  default_prompt: "使用 $grill-me 按上游规则讨论我的计划，分轮提出依赖已满足的问题。"
+policy:
+  allow_implicit_invocation: false

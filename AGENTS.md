@@ -6,7 +6,7 @@
 - 技能内容变更与插件包装变更分开说明，不借迁移或格式整理改变已批准的工作流程。
 - `README.md` 保存安装、更新、发布与故障处理方法；`CHANGELOG.md` 保存发布变更。阶段计划及待办需要落盘时统一写入 `PLAN.md`。
 - 新文件采用 UTF-8 无 BOM；行尾以 `.gitattributes` 为准。迁入技能保留已有 LF 或 CRLF，同一文件不得混用。
-- 插件发布变更必须更新 `plugins/hexgen-software-engineering/.codex-plugin/plugin.json` 中的版本及 `CHANGELOG.md`；维护中的本地试验遵循 plugin-creator 当前更新流程。
+- 插件发布变更必须更新受影响插件 `plugins/<插件标识>/.codex-plugin/plugin.json` 中的版本及根 `CHANGELOG.md`，各插件独立版本化；维护中的本地试验遵循 plugin-creator 当前更新流程。
 - 交付前运行 `scripts/校验插件.ps1` 和 `git diff --check`。改动包装、路径、元数据或市场结构时，还应验证 Codex 实际安装与技能发现；结构校验不能替代技能行为验证。
 - 插件安装测试使用隔离的临时 Codex 配置。除非当前任务明确要求，不修改使用者的真实插件源、安装状态或旧技能启用状态。
 - Git 提交与推送按当前用户授权执行；授权提交不包含推送、建 PR 或发送团队通知。

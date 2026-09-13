@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/mattpocock/skills",
+  "ref": "main",
+  "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
+  "directories": [
+    "skills/productivity/grill-me/",
+    "skills/productivity/grilling/"
+  ],
+  "files": [
+    {
+      "upstreamPath": "skills/productivity/grill-me/SKILL.md",
+      "localPath": "上游快照/入口.md",
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "gitBlobSha1": "3947ff9c4ad980d14fc07fccbf659d47c114e81d"
+    },
+    {
+      "upstreamPath": "skills/productivity/grilling/SKILL.md",
+      "localPath": "skills/grill-me/references/上游追问规则.md",
+      "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+      "gitBlobSha1": "8ca78c6d8f901aab0c5a1f896034b70e666ff2a3"
+    },
+    {
+      "upstreamPath": "LICENSE",
+      "localPath": "LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "gitBlobSha1": "f1dd2c09108dde1a5f56097cee8461b3ea834499"
+    }
+  ],
+  "single": {
+    "origin": "用户本地已认可的单问题版本；未确认原始安装 commit，不追随上游自动更新。",
+    "sourceFiles": [
+      {
+        "path": "C:\\Users\\Administrator\\.codex\\skills\\grill-me\\SKILL.md",
+        "sha256": "6189dfceb7304a6e5558f75d87e68fa3bc7fcf7ba120e44f21f8a61fe01eba54"
+      },
+      {
+        "path": "C:\\Users\\Administrator\\.codex\\skills\\grilling\\SKILL.md",
+        "sha256": "44331dda57f461db4fec3f2efb6ddabe7aaaa0a57ae0f88a883bc61aed8a0587"
+      }
+    ],
+    "localPath": "skills/grill-me-single/SKILL.md",
+    "sha256": "4586af1c1c60e53055f25a6a51c34843de633461c6d6a608ac1ffacbda92a880"
+  }
+}

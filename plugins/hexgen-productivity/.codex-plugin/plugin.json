@@ -1,0 +1,21 @@
+{
+  "name": "hexgen-productivity",
+  "version": "0.1.0",
+  "description": "Hexgen 通用工作方式：逐题澄清与跟踪上游的分轮追问。",
+  "author": {
+    "name": "Hexgen"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Hexgen 通用工作方式",
+    "shortDescription": "通过逐题或分轮追问，澄清计划、设计与决策。",
+    "longDescription": "提供 Grill Me Single 和 Grill Me 两个显式调用的技能。Single 固定每次一个问题；Grill Me 保留上游规则并记录采用版本，更新经验证后发布。适用于软件工程及非代码场景。",
+    "developerName": "Hexgen",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": "请使用 Grill Me Single，逐题帮我澄清当前计划，每次给出推荐答案并等待我回答。"
+  },
+  "repository": "https://github.com/CarloIT/Hexgen.CodexPlugins"
+}
