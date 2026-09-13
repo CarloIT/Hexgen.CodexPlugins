@@ -37,6 +37,10 @@ $expectedPlugins = @{
     'hexgen-software-engineering' = @('dev-plan', 'dotnet-backend-standards', 'manual-acceptance-guide')
     'hexgen-productivity' = @('grill-me-single', 'grill-me')
 }
+$expectedCategories = @{
+    'hexgen-software-engineering' = 'Developer Tools'
+    'hexgen-productivity' = 'Productivity'
+}
 $actualPlugins = @($marketplace.plugins | Select-Object -ExpandProperty name)
 Assert-Condition (@(Compare-Object @($expectedPlugins.Keys) $actualPlugins).Count -eq 0) 'Unexpected plugin entry set.'
 $textFiles = @($marketplacePath)
@@ -47,7 +51,7 @@ foreach ($entry in $marketplace.plugins) {
     Assert-Condition ($entry.source.path -eq ('./plugins/' + $entry.name)) 'Unexpected plugin source path.'
     Assert-Condition ($entry.policy.installation -in @('AVAILABLE', 'INSTALLED_BY_DEFAULT', 'NOT_AVAILABLE')) 'Invalid installation policy.'
     Assert-Condition ($entry.policy.authentication -in @('ON_INSTALL', 'ON_USE')) 'Invalid authentication policy.'
-    Assert-Condition ($entry.category -eq 'Productivity') 'Unexpected marketplace category.'
+    Assert-Condition ($entry.category -ceq $expectedCategories[$entry.name]) 'Unexpected marketplace category.'
 
     $pluginRoot = Resolve-RepositoryPath $repositoryRoot $entry.source.path
     $manifestPath = Join-Path $pluginRoot '.codex-plugin/plugin.json'
@@ -59,6 +63,7 @@ foreach ($entry in $marketplace.plugins) {
     Assert-Condition (-not [string]::IsNullOrWhiteSpace($manifest.description)) 'Missing plugin description.'
     Assert-Condition (-not [string]::IsNullOrWhiteSpace($manifest.author.name)) 'Missing plugin author.'
     Assert-Condition ($manifest.skills -eq './skills/') 'Unexpected skill directory.'
+    Assert-Condition ($manifest.interface.category -ceq $entry.category) 'Plugin and marketplace categories differ.'
     Assert-Condition (-not $manifestText.Contains('[TODO:')) 'Unfinished manifest placeholder.'
     foreach ($field in @('displayName', 'shortDescription', 'longDescription', 'developerName', 'category', 'defaultPrompt')) {
         Assert-Condition (-not [string]::IsNullOrWhiteSpace($manifest.interface.$field)) "Missing interface field: $field"

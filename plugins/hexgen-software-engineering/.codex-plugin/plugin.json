@@ -1,6 +1,6 @@
 {
   "name": "hexgen-software-engineering",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Hexgen 团队的软件工程工作流：分阶段开发计划、.NET 后端规范与中文人工验收手册。",
   "author": {
     "name": "Hexgen"
@@ -12,7 +12,7 @@
     "shortDescription": "统一开发计划、.NET 后端工作和人工验收文档。",
     "longDescription": "面向使用 Codex 桌面端或 CLI 的 Hexgen 工程师，跨项目提供分阶段开发计划、.NET 后端设计与实现规范、中文人工验收手册三个技能。各技能按任务范围触发，尊重用户授权和项目规则。",
     "developerName": "Hexgen",
-    "category": "Productivity",
+    "category": "Developer Tools",
     "capabilities": ["Read", "Write"],
     "defaultPrompt": "请根据当前任务，使用适用的 Hexgen 软件工程技能处理开发计划、.NET 后端工作或人工验收文档。"
   }

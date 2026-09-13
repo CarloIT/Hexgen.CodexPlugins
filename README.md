@@ -10,7 +10,7 @@ Hexgen 团队的 Codex 插件维护仓库。面向使用个人账号的工程师
 | 软件工程插件显示名称 | Hexgen 软件工程规范 |
 | 通用工作方式插件 | `hexgen-productivity`（Hexgen 通用工作方式） |
 
-本仓库发布两个可独立安装的插件：`hexgen-software-engineering` 提供软件工程规范；`hexgen-productivity` 提供跨领域的计划、设计与决策追问。五个技能分别保留自己的名称与触发范围。
+本仓库发布两个可独立安装的插件：`hexgen-software-engineering` 提供软件工程规范；`hexgen-productivity` 提供跨领域的计划、设计与决策追问。五个技能分别保留自己的名称与触发范围。展示分类分别为 `Developer Tools` 与 `Productivity`；分类用于展示，不代替各技能的适用范围。
 
 ## 包含的技能
 
