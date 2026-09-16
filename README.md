@@ -19,7 +19,7 @@ Hexgen 团队的 Codex 插件维护仓库。面向使用个人账号的工程师
 | [dev-plan](plugins/hexgen-software-engineering/skills/dev-plan/SKILL.md) | 开发、优化、重构、迭代的分阶段计划 | 不用于 PRD 或单次小改动的临时待办 |
 | [dotnet-backend-standards](plugins/hexgen-software-engineering/skills/dotnet-backend-standards/SKILL.md) | .NET 后端设计、实现、审查、测试与排障 | 不用于纯前端或非 .NET 任务；混合任务仅约束后端部分 |
 | [manual-acceptance-guide](plugins/hexgen-software-engineering/skills/manual-acceptance-guide/SKILL.md) | 中文人工验收手册及作者回报的结果登记 | 不代替作者执行、签收，也不把自动验证当成人工通过 |
-| [Grill Me Single](plugins/hexgen-productivity/skills/grill-me-single/SKILL.md) | 逐题澄清计划、设计、决策或想法 | 显式调用，每次只问一个问题；固定用户认可的本地规则 |
+| [Grill Me Single](plugins/hexgen-productivity/skills/grill-me-single/SKILL.md) | 逐题澄清与决策；已授权任务逐项落实 | 显式调用，每次只问一个问题；当前项实施并验证后再继续，仅讨论或只读审查不实施 |
 | [Grill Me](plugins/hexgen-productivity/skills/grill-me/SKILL.md) | 按Github 源 SKILL方式分轮集中追问 | 显式调用；跟踪Github 源 SKILL、验证后发布，不保证永远保持当前提问方式 |
 
 前三个技能属于软件工程插件，会按请求匹配，也可显式选择；两个 Grill Me 属于通用工作方式插件，保留显式调用策略。跨项目安装不表示每条请求都要执行所有技能。项目 `AGENTS.md` 保存项目长期规则；仅将规则放在本插件仓库中，不会自动把它们分发为其他项目的全局指令。

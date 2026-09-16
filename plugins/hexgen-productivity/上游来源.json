@@ -28,7 +28,7 @@
     }
   ],
   "single": {
-    "origin": "用户本地已认可的单问题版本；未确认原始安装 commit，不追随上游自动更新。",
+    "origin": "源自用户本地已认可的单问题版本；0.2.0 起按用户确认调整为已授权任务逐项落实，并精简重复提示。未确认原始安装 commit，不追随上游自动更新。",
     "sourceFiles": [
       {
         "path": "C:\\Users\\Administrator\\.codex\\skills\\grill-me\\SKILL.md",
@@ -40,6 +40,6 @@
       }
     ],
     "localPath": "skills/grill-me-single/SKILL.md",
-    "sha256": "4586af1c1c60e53055f25a6a51c34843de633461c6d6a608ac1ffacbda92a880"
+    "sha256": "5a2c109dd0dce295c10fc25f24e0132becf332c90e8f70e3ed96af44f4f9c43a"
   }
 }
